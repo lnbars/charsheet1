@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block data %}
+
+<h3>Update user</h3>
+    <p id="errormessage">{{ error_message }}</p>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <table>
+          <tr>
+            <td>{{ form.oldpassword.label }}</td>
+            <td>{{ form.oldpassword(size=32) }}</td>
+          </tr>
+          <tr>
+            <td>{{ form.password.label }}</td>
+            <td>{{ form.password(size=32) }}</td>
+          </tr>
+          <tr>
+            <td>{{ form.repeatpassword.label }}</td>
+            <td>{{ form.repeatpassword(size=32) }}</td>
+          </tr>
+        </table>
+        <p>{{ form.update(default=2) }} <a href="/data" >Cancel</a></p>
+    </form>
+
+{% endblock %}

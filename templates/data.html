@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block data %}
+
+<div id="errordiv" class="errordiv"></div>
+<div id="wrapper" class="wrapper">
+  <div id="characterlist" class="listdiv"> </div>
+  <div id="character" class="bodydiv">
+    <div id="characterinfo" class="infodiv threecolumn"></div>
+    <div id="attributes" class="attrdiv"></div>
+  </div>
+  <div id="tooldiv" class="tooldiv">
+    <input type="checkbox" id="displayallcheckbox"/><label>Display All</label>
+    <button id="printbutton">Print</button>
+  </div>
+</div>
+<div id="dotroll" class="dotroll"></div>
+{% endblock %}
+

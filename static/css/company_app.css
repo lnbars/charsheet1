@@ -1,0 +1,173 @@
+.leadername {
+  font-weight: bold;
+}
+.companyname {
+  font-weight: bold;
+}
+.table-border-right {
+  border-right-color: gray;
+  border-right-style: dotted;
+  border-right-width: thin;
+}
+.charattributeval {
+  padding-left: 10px;
+  width: 45px;
+}
+/* td.fieldname:first-letter { */
+td.fieldname {
+  text-transform:capitalize;
+}
+label.fieldname {
+  text-transform:capitalize;
+}
+td.toprow {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+tr.odd {
+  background-color: #f7f7f8;
+}
+table {
+  border-collapse: collapse;
+}
+.navicon {
+  padding-left: 10px;
+}
+.navdiv {
+  position: absolute;
+  left: 60px;
+  top: 10px;
+  z-index: 0;
+  padding: 5px;
+  background-color: ghostwhite;
+  border: gray;
+  border-radius: 5px;
+}
+.navspan {
+  margins: 50px;
+}
+.navspan:hover {
+  font-style: italic;
+  font-weight: bold;
+}
+.errordiv {
+  position: absolute;
+  left: 160px;
+  top: 20px;
+  font-weight: bold;
+  color: red;
+  margin: 10px;
+}
+.namedropdown {
+  width: 100px;
+  margin-left: 10px;
+}
+.investorelem {
+  padding-left: 10px;
+}
+.divcompany {
+  border: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: darkgray;
+}
+.openclose {
+  font-weight: bold;
+  display: inline-block;
+  width: 8px;
+  border: solid;
+  border-width: 1px;
+  border-color: darkgray;
+  margin: 2px;
+  padding: 2px;
+  padding-bottom: 1px;
+}
+
+
+
+
+.circle_empty {
+  width: 15px;
+  height: 15px;
+}
+.circle_full {
+  width: 15px;
+  height: 15px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+.threecolumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.attribute {
+  font-size: 18px;
+}
+.bodydiv {
+}
+.listdiv {
+}
+.attributetable {
+  width: 100%;
+}
+.headertd {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  background-image: url('/static/images/separator2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.headertdsmall {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: url('/static/images/separator2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.spacer {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.headerspan {
+  background-color: white;
+  padding: 15px;
+}
+
+.dontshow {
+  display: none;
+}
+.disciplinetable {
+  width: 91%;
+}
+.indentedlabel {
+  padding-left: 15px;
+}
+.typeheader {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 4px;
+  text-align: center;
+}
+.center {
+  text-align: center;
+}
+.alignright {
+  text-align: right;
+}
+.penaltyspan {
+  padding-right: 10px;
+}
+.deletebutton {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+
+

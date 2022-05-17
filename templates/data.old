@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Characters</title>
+    <script src="{{url_for('static', filename='js/jquery-3.4.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery-ui.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery-confirm.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery.inputmask.js')}}"></script>
+
+    <script src="{{url_for('static', filename='js/stat.js')}}"></script>
+    <script src="{{url_for('static', filename='js/company_app.js')}}"></script>
+    <script src="{{url_for('static', filename='js/company_nav.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/company_app.css')}}"/>
+
+</head>
+
+<body>
+<div id="hamburger" class="navicon">
+  <img src="{{url_for('static', filename='images/hamburger_icon.svg')}}" alt="Navigation Menu" />
+</div>
+<div id="nav" class="navdiv">
+  <span id="navleaders" class="navspan"><a href="/data"/>Characters</a><br/></span>
+  <span id="usersettings" class="navspan"><a href="/user/settings">Change Password</a><br/></span>
+</div>
+<div id="errordiv" class="errordiv"></div>
+<div id="characters" class="bodydiv"> </div>
+
+</body>
+</html>

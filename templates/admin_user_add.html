@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block data %}
+
+<h3>Add a user</h3>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}<br>
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}<br><br>
+            {{ form.role.label }}<br>
+            {{ form.role }}<br>
+        </p>
+        <p>{{ form.submit() }} <a href="/admin/users" >Cancel</a></p>
+    </form>
+
+{% endblock %}

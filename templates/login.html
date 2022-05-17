@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Catapult</title>
+    <link rel=stylesheet type="text/css", href="{{url_for('static', filename='mdbootstrap_4.11.0/css/bootstrap.min.css')}}">
+</head>
+
+<style>
+body {
+    background-color: #060e2f;
+    /* width: fit-content; */
+    font-family: arial, sans-serif;
+    margin:0;
+    padding:0;
+    border:0;
+    line-height:unset;
+}
+#loginform {
+    border: solid black 2px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+#errormessage {
+    color: red;
+}
+
+</style>
+
+<body>
+
+<div id="pagecontent">
+<div id="pagedatacontentcontainer" style="">
+<div id="pagedatacontent" style="border-left: 7px solid transparent;">
+<div id="loginform">
+    <h3>Sign In</h3>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p id="errormessage">{{ error_message }}</p>
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}<br>
+            {% if require_password %}
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}<br>
+            {% endif %}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</div>
+</div></div></div>
+
+</body>
+</html>
+

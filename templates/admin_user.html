@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block data %}
+
+<p><a href="/admin/users/add">Add a user</a></p>
+
+<h3>Users</h3>
+<table>
+<tr><th>User name</th><th>Role</th><th>DN</th><th>Last Login</th><th>Created</th><th>Deleted</th><th>Change Password</th><th>Delete</th></tr>
+{% for item in userlist %}
+    <tr><td> {{ item["username"] }} </td>
+        <td> {{ item["role"] }} </td>
+        <td> {{ item["distinguishedname"] }} </td>
+        <td> {{ item["last_login"] }} </td>
+        <td> {{ item["id_created"] }} </td>
+        <td> {{ item["deleted_date"] }} </td>
+        <td> <a href="/admin/users/pwd?user={{ item["username"] }}" >Change Password</a> </td>
+        <td> <a href="/admin/users/delete?user={{ item["username"] }}" >Delete</a> </td>
+    </tr>
+{% endfor %}
+</table>
+
+{% endblock %}
+
